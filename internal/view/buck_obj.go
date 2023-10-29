@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/anysphere/lens/internal"
+	"github.com/anysphere/lens/internal/aws"
+	"github.com/anysphere/lens/internal/ui"
 	"github.com/atotto/clipboard"
 	awsV2 "github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal"
-	"github.com/one2nc/cloudlens/internal/aws"
-	"github.com/one2nc/cloudlens/internal/ui"
 	"github.com/rs/zerolog/log"
 )
 

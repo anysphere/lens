@@ -7,13 +7,13 @@ import (
 	"strings"
 	"time"
 
+	"github.com/anysphere/lens/internal"
+	"github.com/anysphere/lens/internal/aws"
+	"github.com/anysphere/lens/internal/model"
+	"github.com/anysphere/lens/internal/ui"
+	"github.com/anysphere/lens/internal/ui/dialog"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal"
-	"github.com/one2nc/cloudlens/internal/aws"
-	"github.com/one2nc/cloudlens/internal/model"
-	"github.com/one2nc/cloudlens/internal/ui"
-	"github.com/one2nc/cloudlens/internal/ui/dialog"
 	"github.com/rs/zerolog/log"
 )
 

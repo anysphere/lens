@@ -3,8 +3,8 @@ package ui
 import (
 	"fmt"
 
+	"github.com/anysphere/lens/internal/model"
 	"github.com/derailed/tview"
-	"github.com/one2nc/cloudlens/internal/model"
 	"github.com/rs/zerolog/log"
 )
 

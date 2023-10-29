@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/anysphere/lens/internal/model"
+	"github.com/anysphere/lens/internal/render"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal/model"
-	"github.com/one2nc/cloudlens/internal/render"
 	"github.com/rs/zerolog/log"
 )
 

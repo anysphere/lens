@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/anysphere/lens/internal/dao"
+	"github.com/anysphere/lens/internal/render"
 	"github.com/cenkalti/backoff"
-	"github.com/one2nc/cloudlens/internal/dao"
-	"github.com/one2nc/cloudlens/internal/render"
 	"github.com/rs/zerolog/log"
 )
 

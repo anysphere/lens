@@ -4,9 +4,9 @@ import (
 	"os"
 	"sync"
 
+	"github.com/anysphere/lens/internal/model"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal/model"
 )
 
 type App struct {

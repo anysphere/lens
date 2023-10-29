@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/one2nc/cloudlens/internal"
-	"github.com/one2nc/cloudlens/internal/model"
-	"github.com/one2nc/cloudlens/internal/ui"
+	"github.com/anysphere/lens/internal"
+	"github.com/anysphere/lens/internal/model"
+	"github.com/anysphere/lens/internal/ui"
 )
 
 func extractApp(ctx context.Context) (*App, error) {

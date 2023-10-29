@@ -1,5 +1,5 @@
 GO_FLAGS   ?=
-NAME       := cloudlens
+NAME       := lens
 OUTPUT_BIN ?= execs/${NAME}
 PACKAGE    := github.com/one2nc/$(NAME)
 VERSION    = v0.1.3
@@ -17,7 +17,10 @@ build:
 	-o ${OUTPUT_BIN} main.go
 	
 run: build
-	./execs/cloudlens
+	./execs/lens
+
+install: build
+	cp ${OUTPUT_BIN} /usr/local/bin/${NAME}
 
 setup:
 	docker-compose up -d 

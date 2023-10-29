@@ -3,8 +3,8 @@ package ui
 import (
 	"sort"
 
+	"github.com/anysphere/lens/internal/model"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal/model"
 	"github.com/rs/zerolog/log"
 )
 

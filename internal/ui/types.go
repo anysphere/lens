@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/one2nc/cloudlens/internal/dao"
-	"github.com/one2nc/cloudlens/internal/model"
-	"github.com/one2nc/cloudlens/internal/render"
+	"github.com/anysphere/lens/internal/dao"
+	"github.com/anysphere/lens/internal/model"
+	"github.com/anysphere/lens/internal/render"
 	"github.com/sahilm/fuzzy"
 )
 

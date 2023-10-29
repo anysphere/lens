@@ -3,7 +3,7 @@ package render
 import (
 	"testing"
 
-	"github.com/one2nc/cloudlens/internal/aws"
+	"github.com/anysphere/lens/internal/aws"
 	"github.com/stretchr/testify/assert"
 )
 

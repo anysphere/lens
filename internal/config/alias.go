@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/one2nc/cloudlens/internal"
+	"github.com/anysphere/lens/internal"
 	"github.com/rs/zerolog/log"
 	"gopkg.in/yaml.v2"
 )

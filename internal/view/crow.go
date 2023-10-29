@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/anysphere/lens/internal/model"
+	"github.com/anysphere/lens/internal/ui"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal/model"
-	"github.com/one2nc/cloudlens/internal/ui"
 )
 
 // Cow represents a bomb viewer.

@@ -6,12 +6,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/anysphere/lens/internal"
+	"github.com/anysphere/lens/internal/aws"
 	awsV2 "github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 	"github.com/aws/aws-sdk-go-v2/service/s3/types"
 	"github.com/dustin/go-humanize"
-	"github.com/one2nc/cloudlens/internal"
-	"github.com/one2nc/cloudlens/internal/aws"
 	"github.com/rs/zerolog/log"
 )
 

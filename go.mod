@@ -1,4 +1,4 @@
-module github.com/one2nc/cloudlens
+module github.com/anysphere/lens
 
 go 1.19
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/one2nc/cloudlens/internal/color"
-	"github.com/one2nc/cloudlens/internal/render"
+	"github.com/anysphere/lens/internal/color"
+	"github.com/anysphere/lens/internal/render"
 	"github.com/rs/zerolog/log"
 )
 

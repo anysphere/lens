@@ -3,9 +3,9 @@ package view
 import (
 	"context"
 
+	"github.com/anysphere/lens/internal/model"
+	"github.com/anysphere/lens/internal/ui"
 	awsV2 "github.com/aws/aws-sdk-go-v2/aws"
-	"github.com/one2nc/cloudlens/internal/model"
-	"github.com/one2nc/cloudlens/internal/ui"
 )
 
 type (

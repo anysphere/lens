@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/anysphere/lens/internal/ui"
 	"github.com/atotto/clipboard"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal/ui"
 	"github.com/rs/zerolog/log"
 )
 

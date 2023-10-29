@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
+	"github.com/anysphere/lens/internal/aws"
 	"github.com/derailed/tview"
-	"github.com/one2nc/cloudlens/internal/aws"
 )
 
 type EcsClusterServices struct {

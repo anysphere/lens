@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/anysphere/lens/internal/model"
 	"github.com/derailed/tview"
-	"github.com/one2nc/cloudlens/internal/model"
 )
 
 const (

@@ -3,9 +3,9 @@ package view
 import (
 	"context"
 
+	"github.com/anysphere/lens/internal"
+	"github.com/anysphere/lens/internal/ui"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal"
-	"github.com/one2nc/cloudlens/internal/ui"
 )
 
 type IAMU struct {

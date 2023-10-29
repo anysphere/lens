@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/one2nc/cloudlens/internal/color"
+	"github.com/anysphere/lens/internal/color"
 	"github.com/spf13/cobra"
 )
 

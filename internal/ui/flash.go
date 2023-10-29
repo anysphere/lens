@@ -3,9 +3,9 @@ package ui
 import (
 	"context"
 
+	"github.com/anysphere/lens/internal/model"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal/model"
 	"github.com/rs/zerolog/log"
 )
 

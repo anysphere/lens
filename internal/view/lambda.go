@@ -1,8 +1,8 @@
 package view
 
 import (
+	"github.com/anysphere/lens/internal/ui"
 	"github.com/gdamore/tcell/v2"
-	"github.com/one2nc/cloudlens/internal/ui"
 )
 
 type Lambda struct {

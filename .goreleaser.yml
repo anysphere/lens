@@ -14,7 +14,7 @@ builds:
       - -trimpath
 
     ldflags:
-      - -s -w -X github.com/one2nc/cloudlens/cmd.version=v{{.Version}} -X github.com/one2nc/cloudlens/cmd.commit={{.Commit}} -X github.com/one2nc/cloudlens/cmd.date={{.Date}}
+      - -s -w -X github.com/anysphere/lens/cmd.version=v{{.Version}} -X github.com/anysphere/lens/cmd.commit={{.Commit}} -X github.com/anysphere/lens/cmd.date={{.Date}}
 release:
   prerelease: auto
 
@@ -24,7 +24,7 @@ universal_binaries:
 brews:
   -
     name: cloudlens
-    homepage: https://github.com/one2nc/cloudlens
+    homepage: https://github.com/anysphere/lens
     tap:
       owner: one2nc
       name: homebrew-cloudlens

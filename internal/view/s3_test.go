@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/one2nc/cloudlens/internal"
+	"github.com/anysphere/lens/internal"
 	"github.com/stretchr/testify/assert"
 )
 

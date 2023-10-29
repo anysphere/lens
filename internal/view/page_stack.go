@@ -3,8 +3,8 @@ package view
 import (
 	"context"
 
-	"github.com/one2nc/cloudlens/internal/model"
-	"github.com/one2nc/cloudlens/internal/ui"
+	"github.com/anysphere/lens/internal/model"
+	"github.com/anysphere/lens/internal/ui"
 )
 
 // PageStack represents a stack of pages.
