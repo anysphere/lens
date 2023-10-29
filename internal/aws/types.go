@@ -144,9 +144,10 @@ type EcsServiceResp struct {
 	Status         string
 	ServiceArn     string
 	ServiceType    string
-	TasksTotal     int32 
-	RunningCount   int32 
+	TasksTotal     int32
+	RunningCount   int32
 	PendingCount   int32
 	LastDeployment string
 	Revision       string
+	DockerImage  string
 }
