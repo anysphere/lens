@@ -20,7 +20,7 @@ run: build
 	./execs/lens
 
 install: build
-	cp ${OUTPUT_BIN} /usr/local/bin/${NAME}
+	sudo cp ${OUTPUT_BIN} /usr/local/bin/${NAME}
 
 setup:
 	docker-compose up -d 
