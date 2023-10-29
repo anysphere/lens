@@ -10,6 +10,9 @@ func loadCustomViewers() MetaViewers {
 
 func coreViewers(vv MetaViewers) {
 	// TODO create consts instead of hardcoded
+	vv[internal.LowercaseEcsClusterSerivces] = MetaViewer{
+		viewerFn: NewECSClusterViewer,
+	}
 	vv[internal.LowercaseEc2] = MetaViewer{
 		viewerFn: NewEC2,
 	}

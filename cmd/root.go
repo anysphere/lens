@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"os"
+	"path/filepath"
 
 	cfg "github.com/aws/aws-sdk-go-v2/config"
 	awsS "github.com/aws/aws-sdk-go/aws"
@@ -47,7 +48,21 @@ func Execute() {
 
 func run(cmd *cobra.Command, args []string) {
 	mod := os.O_CREATE | os.O_APPEND | os.O_WRONLY
-	file, err := os.OpenFile("./cloudlens.log", mod, 0644)
+	rootDir, _ := os.UserHomeDir()
+
+	// logFileName := fmt.Sprintf("%s-%d.log", date, rand.Intn(100000))
+	logFileName := "cloudlens.log"
+	cloudlensDir := filepath.Join(rootDir, ".cloudlens")
+	if _, err := os.Stat(cloudlensDir); os.IsNotExist(err) {
+		os.Mkdir(cloudlensDir, os.ModePerm)
+	}
+	logsDir := filepath.Join(cloudlensDir, "logs")
+	if _, err := os.Stat(logsDir); os.IsNotExist(err) {
+		os.Mkdir(logsDir, os.ModePerm)
+	}
+	logFilePath := filepath.Join(cloudlensDir, "logs", logFileName)
+	file, err := os.OpenFile(logFilePath, mod, 0644)
+
 	if err != nil {
 		log.Printf("Could not open cloudlens.log. Writing logs to stdout instead.")
 		log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stdout})
@@ -65,7 +80,7 @@ func run(cmd *cobra.Command, args []string) {
 	var regions []string
 	app := view.NewApp()
 	profiles, err := readAndValidateProfile()
-	if len(profiles) > 0 {
+	if len(profiles) > 0 && err == nil {
 		if profiles[0] == "default" && len(region) == 0 {
 			region = getDefaultAWSRegion()
 		} else if len(region) == 0 {

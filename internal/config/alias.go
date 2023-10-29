@@ -129,6 +129,7 @@ func (a *Aliases) loadDefaultAliases() {
 	a.mx.Lock()
 	defer a.mx.Unlock()
 
+	a.declare(internal.LowercaseEcsClusterSerivces, internal.UppercaseEcsClusterSerivces)
 	a.declare(internal.LowercaseEc2, internal.UppercaseEc2)
 	a.declare(internal.LowercaseS3, internal.UppercaseS3)
 	a.declare(internal.LowercaseSg, internal.UppercaseSg)

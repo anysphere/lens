@@ -77,7 +77,7 @@ func (c *Command) run(cmd, path string, clearStack bool) error {
 }
 
 func (c *Command) defaultCmd() error {
-	return c.run("ec2", "", true)
+	return c.run("service", "", true)
 }
 
 func (c *Command) specialCmd(cmd, path string) bool {

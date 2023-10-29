@@ -7,6 +7,10 @@ import (
 )
 
 var Registry = map[string]ResourceMeta{
+	internal.LowercaseEcsClusterSerivces: {
+		DAO:      &dao.ECSClusterServices{},
+		Renderer: &render.EcsClusterServices{},
+	},
 	internal.LowercaseEc2: {
 		DAO:      &dao.EC2{},
 		Renderer: &render.EC2{},

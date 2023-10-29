@@ -17,7 +17,7 @@ type EC2Resp struct {
 }
 
 type S3Object struct {
-	SizeInBytes int64
+	SizeInBytes                                        int64
 	Name, ObjectType, LastModified, Size, StorageClass string
 }
 
@@ -137,4 +137,16 @@ type EcsClusterResp struct {
 	Status            string
 	ClusterArn        string
 	RunningTasksCount string
+}
+
+type EcsServiceResp struct {
+	ServiceName    string
+	Status         string
+	ServiceArn     string
+	ServiceType    string
+	TasksTotal     int32 
+	RunningCount   int32 
+	PendingCount   int32
+	LastDeployment string
+	Revision       string
 }
