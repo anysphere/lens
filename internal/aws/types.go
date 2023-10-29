@@ -131,3 +131,10 @@ type SGResp struct {
 	OwnerId     string
 	VpcId       string
 }
+
+type EcsClusterResp struct {
+	ClusterName       string
+	Status            string
+	ClusterArn        string
+	RunningTasksCount string
+}
